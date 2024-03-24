@@ -1,7 +1,7 @@
 
 
-# Naziv projekta
-Korisnički zahtjevi za softver za osobnu telemedicinu
+# Korisnički zahtjevi za softver za osobnu telemedicinu
+
 
 ## Podaci o studentu
 
