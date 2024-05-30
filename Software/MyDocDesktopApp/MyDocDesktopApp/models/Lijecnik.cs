@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyDocDesktopApp.models
 {
-    public class Pacijent : Korisnik
+    public class PaLijecnik : Korisnik
     {
         public string KorisnickoIme { get; set; }
         public string Lozinka { get; set; }
