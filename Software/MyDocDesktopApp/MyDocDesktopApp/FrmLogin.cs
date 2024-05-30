@@ -34,7 +34,8 @@ namespace MyDocDesktopApp
             {
                 if (txtUsername.Text == username && txtPassword.Text == password)
                 {
-                    MessageBox.Show("Dobrodošli!", "Prijavljeni ste",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FrmNacin frmNacin = new FrmNacin();
+                    frmNacin.ShowDialog();
                 }
                 else
                 {
