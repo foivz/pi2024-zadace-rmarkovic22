@@ -30,7 +30,9 @@ namespace MyDocDesktopApp
         private void btnPretplata_Click(object sender, EventArgs e)
         {
             FrmPretplata frmPretplata = new FrmPretplata();
+            Hide();
             frmPretplata.ShowDialog();
+            Close();
         }
     }
 }

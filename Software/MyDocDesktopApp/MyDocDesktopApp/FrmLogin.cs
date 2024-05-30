@@ -35,7 +35,9 @@ namespace MyDocDesktopApp
                 if (txtUsername.Text == username && txtPassword.Text == password)
                 {
                     FrmNacin frmNacin = new FrmNacin();
+                    Hide();
                     frmNacin.ShowDialog();
+                    Close();
                 }
                 else
                 {

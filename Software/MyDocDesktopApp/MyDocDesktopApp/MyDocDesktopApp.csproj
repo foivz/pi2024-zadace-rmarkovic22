@@ -64,6 +64,7 @@
     <Compile Include="FrmPretplata.Designer.cs">
       <DependentUpon>FrmPretplata.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\Korisnik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
