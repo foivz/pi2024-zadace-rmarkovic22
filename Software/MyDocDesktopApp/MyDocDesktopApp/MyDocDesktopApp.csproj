@@ -72,6 +72,9 @@
     <EmbeddedResource Include="FrmNacin.resx">
       <DependentUpon>FrmNacin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmPretplata.resx">
+      <DependentUpon>FrmPretplata.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

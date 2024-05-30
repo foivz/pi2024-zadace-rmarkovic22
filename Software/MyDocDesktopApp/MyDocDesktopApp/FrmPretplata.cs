@@ -16,5 +16,20 @@ namespace MyDocDesktopApp
         {
             InitializeComponent();
         }
+
+        private void btnBasic_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Čestitamo! Uspješno ste odabrali Health Basic tarifu pretplate.", "Odabrali ste tarifu pretplate", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnAdvance_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Čestitamo! Uspješno ste odabrali Health Advance tarifu pretplate.", "Odabrali ste tarifu pretplate", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnPremium_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Čestitamo! Uspješno ste odabrali Health Premium tarifu pretplate.", "Odabrali ste tarifu pretplate", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

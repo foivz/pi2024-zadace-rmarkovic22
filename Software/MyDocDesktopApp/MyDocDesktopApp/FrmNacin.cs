@@ -24,7 +24,7 @@ namespace MyDocDesktopApp
 
         private void btnIndividualno_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Čestitamo!", "Odabrali ste način korištenja", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Čestitamo! Odabrali ste individualni način korištenja.", "Odabrali ste način korištenja", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnPretplata_Click(object sender, EventArgs e)
