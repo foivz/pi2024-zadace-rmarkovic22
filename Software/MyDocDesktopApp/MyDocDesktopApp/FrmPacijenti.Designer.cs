@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPacijenti));
             this.dgvPacijenti = new System.Windows.Forms.DataGridView();
+            this.btnDodaj = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacijenti)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,13 +45,28 @@
             this.dgvPacijenti.TabIndex = 0;
             this.dgvPacijenti.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPacijenti_CellContentClick);
             // 
+            // btnDodaj
+            // 
+            this.btnDodaj.Location = new System.Drawing.Point(628, 431);
+            this.btnDodaj.Name = "btnDodaj";
+            this.btnDodaj.Size = new System.Drawing.Size(119, 30);
+            this.btnDodaj.TabIndex = 1;
+            this.btnDodaj.Text = "Dodaj";
+            this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
+            // 
             // FrmPacijenti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 470);
+            this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.dgvPacijenti);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmPacijenti";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPacijenti";
             this.Load += new System.EventHandler(this.FrmPacijenti_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPacijenti)).EndInit();
@@ -60,5 +77,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvPacijenti;
+        private System.Windows.Forms.Button btnDodaj;
     }
 }

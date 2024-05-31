@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace MyDocDesktopApp.Repositories
 {
@@ -43,5 +44,13 @@ namespace MyDocDesktopApp.Repositories
             };
             return pacijent;
         }
+        public static void InsertPacijent(string ime, string prezime, string email, string kontakt)
+        {
+            string sql = $"INSERT INTO Pacijenti (Ime, Prezime, Email, KOntakt) VALUES ('{ime}','{prezime}', '{email}','{kontakt}')";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
     }
 }

@@ -33,5 +33,13 @@ namespace MyDocDesktopApp
             List<Pacijent> pacijenti = PacijentiRepository.GetPacijenti();
             dgvPacijenti.DataSource = pacijenti;
         }
+
+        private void btnDodaj_Click(object sender, EventArgs e)
+        {
+            FrmDodaj frmDodaj = new FrmDodaj();
+            Hide();
+            frmDodaj.ShowDialog();
+            Close();
+        }
     }
 }
