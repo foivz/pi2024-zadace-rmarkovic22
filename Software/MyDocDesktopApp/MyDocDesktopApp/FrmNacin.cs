@@ -34,5 +34,10 @@ namespace MyDocDesktopApp
             frmPretplata.ShowDialog();
             Close();
         }
+
+        private void FrmNacin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

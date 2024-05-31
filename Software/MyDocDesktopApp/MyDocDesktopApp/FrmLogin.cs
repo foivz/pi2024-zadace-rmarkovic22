@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,8 +13,10 @@ namespace MyDocDesktopApp
 {
     public partial class FrmLogin : Form
     {
-        string username = "korisnik";
-        string password = "korisnik";
+        string usernameKorisnik = "korisnik";
+        string passwordKorisnik = "korisnik";
+        string usernameLijecnik = "lijecnik";
+        string passwordLijecnik = "lijecnik";
 
         public FrmLogin()
         {
@@ -32,11 +35,18 @@ namespace MyDocDesktopApp
             }
             else
             {
-                if (txtUsername.Text == username && txtPassword.Text == password)
+                if (txtUsername.Text == usernameKorisnik && txtPassword.Text == passwordKorisnik)
                 {
                     FrmNacin frmNacin = new FrmNacin();
                     Hide();
                     frmNacin.ShowDialog();
+                    Close();
+                }
+                if(txtUsername.Text == usernameLijecnik && txtPassword.Text == passwordLijecnik)
+                {
+                    dgvPacijenti dgvPacijenti = new dgvPacijenti();
+                    Hide();
+                    dgvPacijenti.ShowDialog();
                     Close();
                 }
                 else
@@ -44,7 +54,10 @@ namespace MyDocDesktopApp
                     MessageBox.Show("Krivi podaci!", "Problem", MessageBoxButtons.OK,MessageBoxIcon.Error);
                 }
             }
+            
+            
         }
+
         private void FrmLogin_Load(object sender, EventArgs e)
         {
         

@@ -9,31 +9,30 @@ using System.Threading.Tasks;
 
 namespace MyDocDesktopApp.Repositories
 {
-    public class PacijentRepository
+    internal class PacijentiRepository
     {
-        public static Pacijent GetPacijent(int id)
+        public static List<Pacijent> GetPacijenti()
         {
-            Pacijent pacijent = null;
-            string sql = $"SELECT * FROM Pacijent WHERE Id = {id}";
+            List<Pacijent> pacijents = new List<Pacijent>();
+            string sql = "SELECT * FROM Pacijenti";
             DB.OpenConnection();
             var reader = DB.GetDataReader(sql);
-            if (reader.HasRows)
+            while (reader.Read())
             {
-                reader.Read();
-                pacijent = CreateObject(reader);
-                reader.Close();
+                Pacijent pacijent = CreateObject(reader);
+                pacijents.Add(pacijent);
             }
+            reader.Close();
             DB.CloseConnection();
-            return pacijent;
+            return pacijents;
         }
-
         private static Pacijent CreateObject(SqlDataReader reader)
         {
             int id = int.Parse(reader["Id"].ToString());
             string Ime = reader["Ime"].ToString();
             string Prezime = reader["Prezime"].ToString();
-            string Email = reader["email"].ToString();
-            string Kontakt = reader["kontakt"].ToString();    
+            string Email = reader["Email"].ToString();
+            string Kontakt = reader["Kontakt"].ToString();
             var pacijent = new Pacijent
             {
                 Id = id,
@@ -41,11 +40,8 @@ namespace MyDocDesktopApp.Repositories
                 Prezime = Prezime,
                 Email = Email,
                 Kontakt = Kontakt
-                
             };
             return pacijent;
         }
-
     }
-
 }
