@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAzuriraj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAzuriraj.Designer.cs">
+      <DependentUpon>FrmAzuriraj.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDodaj.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\PacijentiRepository.cs" />
+    <EmbeddedResource Include="FrmAzuriraj.resx">
+      <DependentUpon>FrmAzuriraj.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDodaj.resx">
       <DependentUpon>FrmDodaj.cs</DependentUpon>
     </EmbeddedResource>

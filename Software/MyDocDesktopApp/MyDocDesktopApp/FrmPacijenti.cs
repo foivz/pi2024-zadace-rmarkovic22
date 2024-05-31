@@ -1,4 +1,5 @@
-﻿using MyDocDesktopApp.models;
+﻿using DBLayer;
+using MyDocDesktopApp.models;
 using MyDocDesktopApp.Repositories;
 using System;
 using System.Collections.Generic;
@@ -39,6 +40,22 @@ namespace MyDocDesktopApp
             FrmDodaj frmDodaj = new FrmDodaj();
             Hide();
             frmDodaj.ShowDialog();
+            Close();
+        }
+
+        private void btnAzuriraj_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnObrisi_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txtId.Text);
+            string sql = $"DELETE FROM Pacijenti WHERE Id = {id}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+            MessageBox.Show("Pacijent uspješno obrisan!", "Obrisan pacijent");
             Close();
         }
     }

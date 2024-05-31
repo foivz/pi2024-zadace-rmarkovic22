@@ -51,6 +51,13 @@ namespace MyDocDesktopApp.Repositories
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
+        public static void DeletePacijent(string ime, string prezime, string email, string kontakt)
+        {
+            string sql = $"DELETE Pacijenti  (Ime, Prezime, Email, KOntakt) VALUES ('{ime}','{prezime}', '{email}','{kontakt}')";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
 
     }
 }
