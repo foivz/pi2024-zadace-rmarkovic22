@@ -44,9 +44,9 @@ namespace MyDocDesktopApp
                 }
                 if(txtUsername.Text == usernameLijecnik && txtPassword.Text == passwordLijecnik)
                 {
-                    dgvPacijenti dgvPacijenti = new dgvPacijenti();
+                   FrmPacijenti frmPacijenti = new FrmPacijenti();
                     Hide();
-                    dgvPacijenti.ShowDialog();
+                    frmPacijenti.ShowDialog();
                     Close();
                 }
                 else

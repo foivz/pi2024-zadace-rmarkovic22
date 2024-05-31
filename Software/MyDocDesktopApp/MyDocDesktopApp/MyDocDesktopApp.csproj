@@ -79,7 +79,7 @@
     <Compile Include="models\Pacijent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\PacijentRepository.cs" />
+    <Compile Include="Repositories\PacijentiRepository.cs" />
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>

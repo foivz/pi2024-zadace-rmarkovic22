@@ -8,7 +8,14 @@ namespace MyDocDesktopApp.models
 {
     public class Pacijent : Korisnik
     {
-        public string KorisnickoIme { get; set; }
-        public string Lozinka { get; set; }
+        public int Id { get; set; }
+        public string Ime { get; set; }
+        public string Prezime { get; set; }
+        public string Email { get; set; }
+        public string Kontakt { get; set; }
+        public override string ToString()
+        {
+            return Ime + " " + Prezime;
+        }
     }
 }
