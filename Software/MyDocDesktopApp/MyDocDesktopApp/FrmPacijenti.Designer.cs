@@ -51,7 +51,7 @@
             // 
             // btnDodaj
             // 
-            this.btnDodaj.Location = new System.Drawing.Point(748, 424);
+            this.btnDodaj.Location = new System.Drawing.Point(636, 373);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(119, 30);
             this.btnDodaj.TabIndex = 1;
@@ -61,7 +61,7 @@
             // 
             // btnAzuriraj
             // 
-            this.btnAzuriraj.Location = new System.Drawing.Point(620, 424);
+            this.btnAzuriraj.Location = new System.Drawing.Point(517, 373);
             this.btnAzuriraj.Name = "btnAzuriraj";
             this.btnAzuriraj.Size = new System.Drawing.Size(109, 30);
             this.btnAzuriraj.TabIndex = 2;
@@ -99,7 +99,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 470);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(853, 430);
             this.Controls.Add(this.btnObrisi);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label1);

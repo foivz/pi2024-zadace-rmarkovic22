@@ -91,7 +91,7 @@
             // 
             this.txtId.Location = new System.Drawing.Point(114, 53);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(134, 22);
+            this.txtId.Size = new System.Drawing.Size(217, 22);
             this.txtId.TabIndex = 5;
             this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
@@ -99,33 +99,33 @@
             // 
             this.txtIme.Location = new System.Drawing.Point(114, 103);
             this.txtIme.Name = "txtIme";
-            this.txtIme.Size = new System.Drawing.Size(187, 22);
+            this.txtIme.Size = new System.Drawing.Size(217, 22);
             this.txtIme.TabIndex = 6;
             // 
             // txtPrezime
             // 
             this.txtPrezime.Location = new System.Drawing.Point(114, 163);
             this.txtPrezime.Name = "txtPrezime";
-            this.txtPrezime.Size = new System.Drawing.Size(114, 22);
+            this.txtPrezime.Size = new System.Drawing.Size(217, 22);
             this.txtPrezime.TabIndex = 7;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(114, 225);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(114, 22);
+            this.txtEmail.Size = new System.Drawing.Size(217, 22);
             this.txtEmail.TabIndex = 8;
             // 
             // txtKontakt
             // 
             this.txtKontakt.Location = new System.Drawing.Point(114, 280);
             this.txtKontakt.Name = "txtKontakt";
-            this.txtKontakt.Size = new System.Drawing.Size(71, 22);
+            this.txtKontakt.Size = new System.Drawing.Size(217, 22);
             this.txtKontakt.TabIndex = 9;
             // 
             // btnSpremi
             // 
-            this.btnSpremi.Location = new System.Drawing.Point(565, 358);
+            this.btnSpremi.Location = new System.Drawing.Point(346, 335);
             this.btnSpremi.Name = "btnSpremi";
             this.btnSpremi.Size = new System.Drawing.Size(130, 29);
             this.btnSpremi.TabIndex = 10;
@@ -137,7 +137,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(570, 386);
             this.Controls.Add(this.btnSpremi);
             this.Controls.Add(this.txtKontakt);
             this.Controls.Add(this.txtEmail);
@@ -153,6 +154,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmDodaj";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDodaj";
             this.Load += new System.EventHandler(this.FrmDodaj_Load);
             this.ResumeLayout(false);
