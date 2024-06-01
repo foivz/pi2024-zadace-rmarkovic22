@@ -45,7 +45,12 @@ namespace MyDocDesktopApp
 
         private void btnAzuriraj_Click(object sender, EventArgs e)
         {
-
+            Pacijent selectedPacijent = dgvPacijenti.CurrentRow.DataBoundItem as Pacijent;
+            if(selectedPacijent != null)
+            {
+                FrmAzuriraj frnAzuriraj = new FrmAzuriraj(selectedPacijent);
+                frnAzuriraj.ShowDialog();
+            }
         }
 
         private void btnObrisi_Click(object sender, EventArgs e)

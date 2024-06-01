@@ -86,6 +86,7 @@
     <Compile Include="FrmPretplata.Designer.cs">
       <DependentUpon>FrmPretplata.cs</DependentUpon>
     </Compile>
+    <Compile Include="Id.cs" />
     <Compile Include="models\Korisnik.cs" />
     <Compile Include="models\Lijecnik.cs" />
     <Compile Include="models\Pacijent.cs" />

@@ -58,6 +58,13 @@ namespace MyDocDesktopApp.Repositories
             DB.ExecuteCommand(sql);
             DB.CloseConnection();
         }
+        public static void UpdatePacijent(int id, string ime, string prezime, string email, string kontakt)
+        {
+            string sql = $"UPDATE Pacijenti set  Email = '{email}', Kontakt ='{kontakt}' WHERE Id = {id} AND Ime = '{ime}' AND Prezime = '{prezime}'" ;
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
 
     }
 }
