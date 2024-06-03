@@ -10,7 +10,13 @@ Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
 Rea Marković | rmarkovic22@foi.hr | 0016158606  | rmarkovic22
 
-
+## lozinke za formu za prijavu
+Prijava za odabir nacina koristenja:
+korisnicko ime:korisnik 
+lozinka: korisnik
+Prijava za lijecnike:
+korisnicko ime: lijecnik
+lozinka: lijecnik
 ## Opis domene
 Ovaj projekt pokriva specifikaciju softverskih rješenja za softver za osobnu telemedicinu.
 
